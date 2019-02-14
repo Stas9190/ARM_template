@@ -1,0 +1,15 @@
+d:\Users\ShulgaSA\source\repos\Airport\Airport\bin\Debug\Airport.exe.config
+d:\Users\ShulgaSA\source\repos\Airport\Airport\bin\Debug\Airport.exe
+d:\Users\ShulgaSA\source\repos\Airport\Airport\bin\Debug\Airport.pdb
+d:\Users\ShulgaSA\source\repos\Airport\Airport\bin\Debug\Google.Protobuf.dll
+d:\Users\ShulgaSA\source\repos\Airport\Airport\bin\Debug\MySql.Data.dll
+d:\Users\ShulgaSA\source\repos\Airport\Airport\bin\Debug\Google.Protobuf.xml
+d:\Users\ShulgaSA\source\repos\Airport\Airport\bin\Debug\MySql.Data.xml
+d:\Users\ShulgaSA\source\repos\Airport\Airport\obj\Debug\Airport.Properties.Resources.resources
+d:\Users\ShulgaSA\source\repos\Airport\Airport\obj\Debug\Airport.csproj.GenerateResource.cache
+d:\Users\ShulgaSA\source\repos\Airport\Airport\obj\Debug\Airport.csproj.CoreCompileInputs.cache
+d:\Users\ShulgaSA\source\repos\Airport\Airport\obj\Debug\Airport.csproj.CopyComplete
+d:\Users\ShulgaSA\source\repos\Airport\Airport\obj\Debug\Airport.exe
+d:\Users\ShulgaSA\source\repos\Airport\Airport\obj\Debug\Airport.pdb
+d:\Users\ShulgaSA\source\repos\Airport\Airport\obj\Debug\Airport.Main.resources
+D:\Users\ShulgaSA\source\repos\Airport\Airport\obj\Debug\Airport.csprojAssemblyReference.cache
