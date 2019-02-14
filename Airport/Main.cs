@@ -21,9 +21,12 @@ namespace Train
         BindingSource schedule = new BindingSource();
         BindingSource schedule_info = new BindingSource();
         BindingSource passengers = new BindingSource();
+        BindingSource passengers2 = new BindingSource();
         BindingSource stations = new BindingSource();
+        BindingSource stations2 = new BindingSource();
         BindingSource users = new BindingSource();
         BindingSource schedule_trains = new BindingSource();
+        BindingSource tickets = new BindingSource();
 
         public Main()
         {
@@ -43,9 +46,12 @@ namespace Train
             ds.Tables.Add("Schedule");
             ds.Tables.Add("Schedule_info");
             ds.Tables.Add("Passenger");
+            ds.Tables.Add("Passenger2");
             ds.Tables.Add("Stations");
+            ds.Tables.Add("Stations2");
             ds.Tables.Add("Users");
             ds.Tables.Add("Schedule_Trains");
+            ds.Tables.Add("Tickets");
         }
 
         //Привязка данных к гридам
@@ -57,7 +63,9 @@ namespace Train
             LoadScheduleToGrid();
             LoadScheduleInfoToGrid();
             LoadPassengersToGrid();
+            LoadPassengers2ToGrid();
             LoadStationsToGrid();
+            LoadStations2ToGrid();
             LoadUsersToGrid();
             LoadScheduleTrainsToGrid();
         }
@@ -159,7 +167,25 @@ namespace Train
         }
         private void LoadDataForTicket()
         {
+            StartPoint.DataSource = stations;
+            StartPoint.DisplayMember = "station";
+            StartPoint.ValueMember = "id";
 
+            EndPoint.DataSource = stations2;
+            EndPoint.DisplayMember = "station";
+            EndPoint.ValueMember = "id";
+
+            TypeVagon.DataSource = types;
+            TypeVagon.DisplayMember = "name";
+            TypeVagon.ValueMember = "id";
+
+            WhoAreYou.DataSource = passengers2;
+            WhoAreYou.DisplayMember = "fio";
+            WhoAreYou.ValueMember = "id";
+
+            Mytrain.DataSource = trains;
+            Mytrain.DisplayMember = "name";
+            Mytrain.ValueMember = "id";
         }
         #endregion
 
@@ -291,6 +317,25 @@ namespace Train
                 }
             }
         }
+        private void LoadPassengers2ToGrid()
+        {
+            using (MySqlConnection con = new MySqlConnection(connStr))
+            {
+                try
+                {
+                    con.Open();
+                    ds.Tables["Passenger2"].Clear();
+                    string sql = "Select id, fio, date_of_birth, passport_num, sex From passenger";
+                    MySqlDataAdapter = new MySqlDataAdapter(sql, con);
+                    MySqlDataAdapter.Fill(ds, "Passenger2");
+                    passengers2.DataSource = ds.Tables["Passenger2"];
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
         private void LoadStationsToGrid()
         {
             comboBox_sch.DataSource = schedule;
@@ -314,6 +359,19 @@ namespace Train
                 dataGridView7.Columns["departure_time"].HeaderText = "Время отправления";
                 dataGridView7.Columns["parking_time"].HeaderText = "Время стоянки";
                 dataGridView7.Columns["bias"].HeaderText = "Смещение";
+            }
+        }
+        private void LoadStations2ToGrid()
+        {
+            using (MySqlConnection con = new MySqlConnection(connStr))
+            {
+                con.Open();
+                ds.Tables["Stations2"].Clear();
+                string sql = "Select * From schedule Where id_schedule = @id";
+                MySqlDataAdapter = new MySqlDataAdapter(sql, con);
+                MySqlDataAdapter.SelectCommand.Parameters.AddWithValue("@id", Convert.ToInt32(comboBox_sch.SelectedValue));
+                MySqlDataAdapter.Fill(ds, "Stations2");
+                stations2.DataSource = ds.Tables["Stations2"];
             }
         }
         private void LoadUsersToGrid()
@@ -1613,6 +1671,32 @@ namespace Train
         {
             wizardPages1.SelectedTab = Prime;
         }
-        #endregion
+        //Поиск доступного билета
+        private void FindTicket_Click(object sender, EventArgs e)
+        {
+            ds.Tables["Tickets"].Clear();
+            dataGridView10.Rows.Clear();
+            if (StartPoint.Text == string.Empty ||
+                EndPoint.Text == string.Empty ||
+                Date.Value == null ||
+                TypeVagon.Text == string.Empty ||
+                Mytrain.Text == string.Empty ||
+                WhoAreYou.Text == string.Empty)
+            {
+                MessageBox.Show("Заполните все поля!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            int id_train = Convert.ToInt32(Mytrain.SelectedValue);
+            int id_type = Convert.ToInt32(TypeVagon.SelectedValue);
+            int start_station_id = Convert.ToInt32(StartPoint.SelectedValue);
+            int end_station_id = Convert.ToInt32(EndPoint.SelectedValue);
+            DateTime date = Date.Value;
+            int id_passenger = Convert.ToInt32(WhoAreYou.SelectedValue);
+
+            //string sql = "Select * From ticket Where ";
+            return;
+        }
+        #endregion        
     }
 }

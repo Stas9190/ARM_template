@@ -97,6 +97,16 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.comboBox_train_choice = new System.Windows.Forms.ComboBox();
+            this.comboBox_schedule_choice = new System.Windows.Forms.ComboBox();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.dataGridView9 = new System.Windows.Forms.DataGridView();
             this.Passengers = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label20 = new System.Windows.Forms.Label();
@@ -134,12 +144,36 @@
             this.label14 = new System.Windows.Forms.Label();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.Tickets = new System.Windows.Forms.TabPage();
+            this.WhoAreYou = new System.Windows.Forms.ComboBox();
+            this.FindTicket = new System.Windows.Forms.Button();
+            this.SummOfPoezdka = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.SaveTicket = new System.Windows.Forms.Button();
+            this.ExportToExcel = new System.Windows.Forms.Button();
+            this.label41 = new System.Windows.Forms.Label();
+            this.Mytrain = new System.Windows.Forms.ComboBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.TypeVagon = new System.Windows.Forms.ComboBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.Date = new System.Windows.Forms.DateTimePicker();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.EndPoint = new System.Windows.Forms.ComboBox();
+            this.StartPoint = new System.Windows.Forms.ComboBox();
+            this.dataGridView10 = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.Administration = new System.Windows.Forms.TabPage();
-            this.button11 = new System.Windows.Forms.Button();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.tel_user = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.email_user = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.priv_user = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.status_user = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.password_user = new System.Windows.Forms.TextBox();
@@ -151,43 +185,7 @@
             this.label29 = new System.Windows.Forms.Label();
             this.fio_user = new System.Windows.Forms.TextBox();
             this.dataGridView8 = new System.Windows.Forms.DataGridView();
-            this.status_user = new System.Windows.Forms.TextBox();
-            this.priv_user = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.email_user = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.tel_user = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.dataGridView9 = new System.Windows.Forms.DataGridView();
-            this.comboBox_schedule_choice = new System.Windows.Forms.ComboBox();
-            this.comboBox_train_choice = new System.Windows.Forms.ComboBox();
-            this.dataGridView10 = new System.Windows.Forms.DataGridView();
-            this.StartPoint = new System.Windows.Forms.ComboBox();
-            this.EndPoint = new System.Windows.Forms.ComboBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.Date = new System.Windows.Forms.DateTimePicker();
-            this.label37 = new System.Windows.Forms.Label();
-            this.TypeVagon = new System.Windows.Forms.ComboBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.YourPlace = new System.Windows.Forms.ComboBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.WhoAreYou = new System.Windows.Forms.ComboBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.Mytrain = new System.Windows.Forms.ComboBox();
-            this.ExportToExcel = new System.Windows.Forms.Button();
-            this.SaveTicket = new System.Windows.Forms.Button();
-            this.label42 = new System.Windows.Forms.Label();
-            this.SummOfPoezdka = new System.Windows.Forms.TextBox();
-            this.FindTicket = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.wizardPages1.SuspendLayout();
             this.Registration.SuspendLayout();
             this.Prime.SuspendLayout();
@@ -206,6 +204,9 @@
             this.tabPage4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.tabPage8.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
             this.Passengers.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
@@ -218,15 +219,12 @@
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.Tickets.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
             this.Administration.SuspendLayout();
             this.tabControl4.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
-            this.tabPage8.SuspendLayout();
-            this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
             this.SuspendLayout();
             // 
             // wizardPages1
@@ -955,6 +953,112 @@
             this.dataGridView3.Size = new System.Drawing.Size(638, 372);
             this.dataGridView3.TabIndex = 6;
             // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.groupBox9);
+            this.tabPage8.Controls.Add(this.dataGridView9);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Size = new System.Drawing.Size(871, 372);
+            this.tabPage8.TabIndex = 4;
+            this.tabPage8.Text = "Расписание поезда";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.comboBox_train_choice);
+            this.groupBox9.Controls.Add(this.comboBox_schedule_choice);
+            this.groupBox9.Controls.Add(this.button15);
+            this.groupBox9.Controls.Add(this.button16);
+            this.groupBox9.Controls.Add(this.button17);
+            this.groupBox9.Controls.Add(this.label34);
+            this.groupBox9.Controls.Add(this.label36);
+            this.groupBox9.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupBox9.Location = new System.Drawing.Point(650, 0);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(221, 372);
+            this.groupBox9.TabIndex = 5;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Редактировать";
+            // 
+            // comboBox_train_choice
+            // 
+            this.comboBox_train_choice.FormattingEnabled = true;
+            this.comboBox_train_choice.Location = new System.Drawing.Point(9, 81);
+            this.comboBox_train_choice.Name = "comboBox_train_choice";
+            this.comboBox_train_choice.Size = new System.Drawing.Size(203, 21);
+            this.comboBox_train_choice.TabIndex = 17;
+            // 
+            // comboBox_schedule_choice
+            // 
+            this.comboBox_schedule_choice.FormattingEnabled = true;
+            this.comboBox_schedule_choice.Location = new System.Drawing.Point(9, 42);
+            this.comboBox_schedule_choice.Name = "comboBox_schedule_choice";
+            this.comboBox_schedule_choice.Size = new System.Drawing.Size(203, 21);
+            this.comboBox_schedule_choice.TabIndex = 16;
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(137, 228);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(75, 23);
+            this.button15.TabIndex = 15;
+            this.button15.Text = "Удалить";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.schedule_trains_del_Click);
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(137, 199);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(75, 23);
+            this.button16.TabIndex = 14;
+            this.button16.Text = "Обновить";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.schedule_trains_update_Click);
+            // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(56, 199);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(75, 23);
+            this.button17.TabIndex = 13;
+            this.button17.Text = "Добавить";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.schedule_train_add_Click);
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(6, 65);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(39, 13);
+            this.label34.TabIndex = 8;
+            this.label34.Text = "Поезд";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(6, 26);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(68, 13);
+            this.label36.TabIndex = 4;
+            this.label36.Text = "Расписание";
+            // 
+            // dataGridView9
+            // 
+            this.dataGridView9.AllowUserToAddRows = false;
+            this.dataGridView9.AllowUserToDeleteRows = false;
+            this.dataGridView9.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.dataGridView9.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView9.Name = "dataGridView9";
+            this.dataGridView9.ReadOnly = true;
+            this.dataGridView9.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView9.Size = new System.Drawing.Size(638, 372);
+            this.dataGridView9.TabIndex = 4;
+            // 
             // Passengers
             // 
             this.Passengers.Controls.Add(this.groupBox6);
@@ -1330,6 +1434,7 @@
             // 
             // Tickets
             // 
+            this.Tickets.Controls.Add(this.WhoAreYou);
             this.Tickets.Controls.Add(this.FindTicket);
             this.Tickets.Controls.Add(this.SummOfPoezdka);
             this.Tickets.Controls.Add(this.label42);
@@ -1338,9 +1443,6 @@
             this.Tickets.Controls.Add(this.label41);
             this.Tickets.Controls.Add(this.Mytrain);
             this.Tickets.Controls.Add(this.label40);
-            this.Tickets.Controls.Add(this.WhoAreYou);
-            this.Tickets.Controls.Add(this.label39);
-            this.Tickets.Controls.Add(this.YourPlace);
             this.Tickets.Controls.Add(this.label38);
             this.Tickets.Controls.Add(this.TypeVagon);
             this.Tickets.Controls.Add(this.label37);
@@ -1356,6 +1458,164 @@
             this.Tickets.TabIndex = 4;
             this.Tickets.Text = "Билеты";
             this.Tickets.UseVisualStyleBackColor = true;
+            // 
+            // WhoAreYou
+            // 
+            this.WhoAreYou.FormattingEnabled = true;
+            this.WhoAreYou.Location = new System.Drawing.Point(357, 67);
+            this.WhoAreYou.Name = "WhoAreYou";
+            this.WhoAreYou.Size = new System.Drawing.Size(154, 21);
+            this.WhoAreYou.TabIndex = 20;
+            // 
+            // FindTicket
+            // 
+            this.FindTicket.Location = new System.Drawing.Point(769, 11);
+            this.FindTicket.Name = "FindTicket";
+            this.FindTicket.Size = new System.Drawing.Size(113, 23);
+            this.FindTicket.TabIndex = 19;
+            this.FindTicket.Text = "Найти билет";
+            this.FindTicket.UseVisualStyleBackColor = true;
+            this.FindTicket.Click += new System.EventHandler(this.FindTicket_Click);
+            // 
+            // SummOfPoezdka
+            // 
+            this.SummOfPoezdka.Location = new System.Drawing.Point(527, 28);
+            this.SummOfPoezdka.Name = "SummOfPoezdka";
+            this.SummOfPoezdka.ReadOnly = true;
+            this.SummOfPoezdka.Size = new System.Drawing.Size(154, 20);
+            this.SummOfPoezdka.TabIndex = 18;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(524, 11);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(41, 13);
+            this.label42.TabIndex = 17;
+            this.label42.Text = "Сумма";
+            // 
+            // SaveTicket
+            // 
+            this.SaveTicket.Location = new System.Drawing.Point(769, 41);
+            this.SaveTicket.Name = "SaveTicket";
+            this.SaveTicket.Size = new System.Drawing.Size(113, 23);
+            this.SaveTicket.TabIndex = 16;
+            this.SaveTicket.Text = "Сохранить";
+            this.SaveTicket.UseVisualStyleBackColor = true;
+            // 
+            // ExportToExcel
+            // 
+            this.ExportToExcel.Location = new System.Drawing.Point(769, 71);
+            this.ExportToExcel.Name = "ExportToExcel";
+            this.ExportToExcel.Size = new System.Drawing.Size(113, 23);
+            this.ExportToExcel.TabIndex = 15;
+            this.ExportToExcel.Text = "Экспорт в Excel";
+            this.ExportToExcel.UseVisualStyleBackColor = true;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(354, 11);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(39, 13);
+            this.label41.TabIndex = 14;
+            this.label41.Text = "Поезд";
+            // 
+            // Mytrain
+            // 
+            this.Mytrain.FormattingEnabled = true;
+            this.Mytrain.Location = new System.Drawing.Point(357, 27);
+            this.Mytrain.Name = "Mytrain";
+            this.Mytrain.Size = new System.Drawing.Size(154, 21);
+            this.Mytrain.TabIndex = 13;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(354, 51);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(59, 13);
+            this.label40.TabIndex = 12;
+            this.label40.Text = "Пассажир";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(148, 51);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(64, 13);
+            this.label38.TabIndex = 8;
+            this.label38.Text = "Тип вагона";
+            // 
+            // TypeVagon
+            // 
+            this.TypeVagon.FormattingEnabled = true;
+            this.TypeVagon.Location = new System.Drawing.Point(151, 67);
+            this.TypeVagon.Name = "TypeVagon";
+            this.TypeVagon.Size = new System.Drawing.Size(200, 21);
+            this.TypeVagon.TabIndex = 7;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(148, 11);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(33, 13);
+            this.label37.TabIndex = 6;
+            this.label37.Text = "Дата";
+            // 
+            // Date
+            // 
+            this.Date.Location = new System.Drawing.Point(151, 28);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(200, 20);
+            this.Date.TabIndex = 5;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(3, 51);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(101, 13);
+            this.label35.TabIndex = 4;
+            this.label35.Text = "Место назначения";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(3, 11);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(107, 13);
+            this.label33.TabIndex = 3;
+            this.label33.Text = "Место отправление";
+            // 
+            // EndPoint
+            // 
+            this.EndPoint.FormattingEnabled = true;
+            this.EndPoint.Location = new System.Drawing.Point(6, 67);
+            this.EndPoint.Name = "EndPoint";
+            this.EndPoint.Size = new System.Drawing.Size(139, 21);
+            this.EndPoint.TabIndex = 2;
+            // 
+            // StartPoint
+            // 
+            this.StartPoint.FormattingEnabled = true;
+            this.StartPoint.Location = new System.Drawing.Point(6, 27);
+            this.StartPoint.Name = "StartPoint";
+            this.StartPoint.Size = new System.Drawing.Size(139, 21);
+            this.StartPoint.TabIndex = 1;
+            // 
+            // dataGridView10
+            // 
+            this.dataGridView10.AllowUserToAddRows = false;
+            this.dataGridView10.AllowUserToDeleteRows = false;
+            this.dataGridView10.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView10.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView10.Location = new System.Drawing.Point(0, 101);
+            this.dataGridView10.Name = "dataGridView10";
+            this.dataGridView10.ReadOnly = true;
+            this.dataGridView10.Size = new System.Drawing.Size(885, 303);
+            this.dataGridView10.TabIndex = 0;
             // 
             // label4
             // 
@@ -1377,18 +1637,6 @@
             this.Administration.TabIndex = 2;
             this.Administration.Text = "Administration";
             this.Administration.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.White;
-            this.button11.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button11.Location = new System.Drawing.Point(767, 3);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(139, 23);
-            this.button11.TabIndex = 12;
-            this.button11.Text = "Выход";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.ExitFromAdmin_Click);
             // 
             // tabControl4
             // 
@@ -1440,6 +1688,61 @@
             this.groupBox8.TabIndex = 11;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Редактировать";
+            // 
+            // tel_user
+            // 
+            this.tel_user.Location = new System.Drawing.Point(6, 276);
+            this.tel_user.Name = "tel_user";
+            this.tel_user.Size = new System.Drawing.Size(209, 20);
+            this.tel_user.TabIndex = 28;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(6, 260);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(52, 13);
+            this.label32.TabIndex = 27;
+            this.label32.Text = "Телефон";
+            // 
+            // email_user
+            // 
+            this.email_user.Location = new System.Drawing.Point(6, 237);
+            this.email_user.Name = "email_user";
+            this.email_user.Size = new System.Drawing.Size(209, 20);
+            this.email_user.TabIndex = 26;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(6, 221);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(37, 13);
+            this.label31.TabIndex = 25;
+            this.label31.Text = "Почта";
+            // 
+            // priv_user
+            // 
+            this.priv_user.Location = new System.Drawing.Point(6, 198);
+            this.priv_user.Name = "priv_user";
+            this.priv_user.Size = new System.Drawing.Size(209, 20);
+            this.priv_user.TabIndex = 24;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(6, 182);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(68, 13);
+            this.label30.TabIndex = 23;
+            this.label30.Text = "Привелегии";
+            // 
+            // status_user
+            // 
+            this.status_user.Location = new System.Drawing.Point(6, 159);
+            this.status_user.Name = "status_user";
+            this.status_user.Size = new System.Drawing.Size(209, 20);
+            this.status_user.TabIndex = 22;
             // 
             // label26
             // 
@@ -1542,341 +1845,17 @@
             this.dataGridView8.Size = new System.Drawing.Size(638, 398);
             this.dataGridView8.TabIndex = 10;
             // 
-            // status_user
-            // 
-            this.status_user.Location = new System.Drawing.Point(6, 159);
-            this.status_user.Name = "status_user";
-            this.status_user.Size = new System.Drawing.Size(209, 20);
-            this.status_user.TabIndex = 22;
-            // 
-            // priv_user
-            // 
-            this.priv_user.Location = new System.Drawing.Point(6, 198);
-            this.priv_user.Name = "priv_user";
-            this.priv_user.Size = new System.Drawing.Size(209, 20);
-            this.priv_user.TabIndex = 24;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(6, 182);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(68, 13);
-            this.label30.TabIndex = 23;
-            this.label30.Text = "Привелегии";
-            // 
-            // email_user
-            // 
-            this.email_user.Location = new System.Drawing.Point(6, 237);
-            this.email_user.Name = "email_user";
-            this.email_user.Size = new System.Drawing.Size(209, 20);
-            this.email_user.TabIndex = 26;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(6, 221);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(37, 13);
-            this.label31.TabIndex = 25;
-            this.label31.Text = "Почта";
-            // 
-            // tel_user
-            // 
-            this.tel_user.Location = new System.Drawing.Point(6, 276);
-            this.tel_user.Name = "tel_user";
-            this.tel_user.Size = new System.Drawing.Size(209, 20);
-            this.tel_user.TabIndex = 28;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(6, 260);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(52, 13);
-            this.label32.TabIndex = 27;
-            this.label32.Text = "Телефон";
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.groupBox9);
-            this.tabPage8.Controls.Add(this.dataGridView9);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(871, 372);
-            this.tabPage8.TabIndex = 4;
-            this.tabPage8.Text = "Расписание поезда";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.comboBox_train_choice);
-            this.groupBox9.Controls.Add(this.comboBox_schedule_choice);
-            this.groupBox9.Controls.Add(this.button15);
-            this.groupBox9.Controls.Add(this.button16);
-            this.groupBox9.Controls.Add(this.button17);
-            this.groupBox9.Controls.Add(this.label34);
-            this.groupBox9.Controls.Add(this.label36);
-            this.groupBox9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox9.Location = new System.Drawing.Point(650, 0);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(221, 372);
-            this.groupBox9.TabIndex = 5;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Редактировать";
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(137, 228);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 23);
-            this.button15.TabIndex = 15;
-            this.button15.Text = "Удалить";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.schedule_trains_del_Click);
-            // 
-            // button16
-            // 
-            this.button16.Location = new System.Drawing.Point(137, 199);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(75, 23);
-            this.button16.TabIndex = 14;
-            this.button16.Text = "Обновить";
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.schedule_trains_update_Click);
-            // 
-            // button17
-            // 
-            this.button17.Location = new System.Drawing.Point(56, 199);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(75, 23);
-            this.button17.TabIndex = 13;
-            this.button17.Text = "Добавить";
-            this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.schedule_train_add_Click);
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(6, 65);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(39, 13);
-            this.label34.TabIndex = 8;
-            this.label34.Text = "Поезд";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(6, 26);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(68, 13);
-            this.label36.TabIndex = 4;
-            this.label36.Text = "Расписание";
-            // 
-            // dataGridView9
-            // 
-            this.dataGridView9.AllowUserToAddRows = false;
-            this.dataGridView9.AllowUserToDeleteRows = false;
-            this.dataGridView9.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.dataGridView9.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView9.Name = "dataGridView9";
-            this.dataGridView9.ReadOnly = true;
-            this.dataGridView9.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView9.Size = new System.Drawing.Size(638, 372);
-            this.dataGridView9.TabIndex = 4;
-            // 
-            // comboBox_schedule_choice
-            // 
-            this.comboBox_schedule_choice.FormattingEnabled = true;
-            this.comboBox_schedule_choice.Location = new System.Drawing.Point(9, 42);
-            this.comboBox_schedule_choice.Name = "comboBox_schedule_choice";
-            this.comboBox_schedule_choice.Size = new System.Drawing.Size(203, 21);
-            this.comboBox_schedule_choice.TabIndex = 16;
-            // 
-            // comboBox_train_choice
-            // 
-            this.comboBox_train_choice.FormattingEnabled = true;
-            this.comboBox_train_choice.Location = new System.Drawing.Point(9, 81);
-            this.comboBox_train_choice.Name = "comboBox_train_choice";
-            this.comboBox_train_choice.Size = new System.Drawing.Size(203, 21);
-            this.comboBox_train_choice.TabIndex = 17;
-            // 
-            // dataGridView10
-            // 
-            this.dataGridView10.AllowUserToAddRows = false;
-            this.dataGridView10.AllowUserToDeleteRows = false;
-            this.dataGridView10.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView10.Location = new System.Drawing.Point(0, 101);
-            this.dataGridView10.Name = "dataGridView10";
-            this.dataGridView10.ReadOnly = true;
-            this.dataGridView10.Size = new System.Drawing.Size(885, 303);
-            this.dataGridView10.TabIndex = 0;
-            // 
-            // StartPoint
-            // 
-            this.StartPoint.FormattingEnabled = true;
-            this.StartPoint.Location = new System.Drawing.Point(6, 27);
-            this.StartPoint.Name = "StartPoint";
-            this.StartPoint.Size = new System.Drawing.Size(139, 21);
-            this.StartPoint.TabIndex = 1;
-            // 
-            // EndPoint
-            // 
-            this.EndPoint.FormattingEnabled = true;
-            this.EndPoint.Location = new System.Drawing.Point(6, 67);
-            this.EndPoint.Name = "EndPoint";
-            this.EndPoint.Size = new System.Drawing.Size(139, 21);
-            this.EndPoint.TabIndex = 2;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(3, 11);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(107, 13);
-            this.label33.TabIndex = 3;
-            this.label33.Text = "Место отправление";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(3, 51);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(101, 13);
-            this.label35.TabIndex = 4;
-            this.label35.Text = "Место назначения";
-            // 
-            // Date
-            // 
-            this.Date.Location = new System.Drawing.Point(151, 28);
-            this.Date.Name = "Date";
-            this.Date.Size = new System.Drawing.Size(200, 20);
-            this.Date.TabIndex = 5;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(148, 11);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(33, 13);
-            this.label37.TabIndex = 6;
-            this.label37.Text = "Дата";
-            // 
-            // TypeVagon
-            // 
-            this.TypeVagon.FormattingEnabled = true;
-            this.TypeVagon.Location = new System.Drawing.Point(151, 67);
-            this.TypeVagon.Name = "TypeVagon";
-            this.TypeVagon.Size = new System.Drawing.Size(200, 21);
-            this.TypeVagon.TabIndex = 7;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(148, 51);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(64, 13);
-            this.label38.TabIndex = 8;
-            this.label38.Text = "Тип вагона";
-            // 
-            // YourPlace
-            // 
-            this.YourPlace.FormattingEnabled = true;
-            this.YourPlace.Location = new System.Drawing.Point(357, 27);
-            this.YourPlace.Name = "YourPlace";
-            this.YourPlace.Size = new System.Drawing.Size(154, 21);
-            this.YourPlace.TabIndex = 9;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(354, 11);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(39, 13);
-            this.label39.TabIndex = 10;
-            this.label39.Text = "Место";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(354, 51);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(59, 13);
-            this.label40.TabIndex = 12;
-            this.label40.Text = "Пассажир";
-            // 
-            // WhoAreYou
-            // 
-            this.WhoAreYou.FormattingEnabled = true;
-            this.WhoAreYou.Location = new System.Drawing.Point(357, 67);
-            this.WhoAreYou.Name = "WhoAreYou";
-            this.WhoAreYou.Size = new System.Drawing.Size(154, 21);
-            this.WhoAreYou.TabIndex = 11;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(514, 11);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(39, 13);
-            this.label41.TabIndex = 14;
-            this.label41.Text = "Поезд";
-            // 
-            // Mytrain
-            // 
-            this.Mytrain.Enabled = false;
-            this.Mytrain.FormattingEnabled = true;
-            this.Mytrain.Location = new System.Drawing.Point(517, 27);
-            this.Mytrain.Name = "Mytrain";
-            this.Mytrain.Size = new System.Drawing.Size(154, 21);
-            this.Mytrain.TabIndex = 13;
-            // 
-            // ExportToExcel
-            // 
-            this.ExportToExcel.Location = new System.Drawing.Point(769, 71);
-            this.ExportToExcel.Name = "ExportToExcel";
-            this.ExportToExcel.Size = new System.Drawing.Size(113, 23);
-            this.ExportToExcel.TabIndex = 15;
-            this.ExportToExcel.Text = "Экспорт в Excel";
-            this.ExportToExcel.UseVisualStyleBackColor = true;
-            // 
-            // SaveTicket
-            // 
-            this.SaveTicket.Location = new System.Drawing.Point(769, 41);
-            this.SaveTicket.Name = "SaveTicket";
-            this.SaveTicket.Size = new System.Drawing.Size(113, 23);
-            this.SaveTicket.TabIndex = 16;
-            this.SaveTicket.Text = "Сохранить";
-            this.SaveTicket.UseVisualStyleBackColor = true;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(514, 51);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(41, 13);
-            this.label42.TabIndex = 17;
-            this.label42.Text = "Сумма";
-            // 
-            // SummOfPoezdka
-            // 
-            this.SummOfPoezdka.Location = new System.Drawing.Point(517, 68);
-            this.SummOfPoezdka.Name = "SummOfPoezdka";
-            this.SummOfPoezdka.ReadOnly = true;
-            this.SummOfPoezdka.Size = new System.Drawing.Size(154, 20);
-            this.SummOfPoezdka.TabIndex = 18;
-            // 
-            // FindTicket
-            // 
-            this.FindTicket.Location = new System.Drawing.Point(769, 11);
-            this.FindTicket.Name = "FindTicket";
-            this.FindTicket.Size = new System.Drawing.Size(113, 23);
-            this.FindTicket.TabIndex = 19;
-            this.FindTicket.Text = "Найти билет";
-            this.FindTicket.UseVisualStyleBackColor = true;
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.White;
+            this.button11.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button11.Location = new System.Drawing.Point(767, 3);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(139, 23);
+            this.button11.TabIndex = 12;
+            this.button11.Text = "Выход";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.ExitFromAdmin_Click);
             // 
             // Main
             // 
@@ -1914,6 +1893,10 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.tabPage8.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
             this.Passengers.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
@@ -1930,17 +1913,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.Tickets.ResumeLayout(false);
             this.Tickets.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
             this.Administration.ResumeLayout(false);
             this.tabControl4.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
-            this.tabPage8.ResumeLayout(false);
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2097,9 +2076,6 @@
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.ComboBox Mytrain;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.ComboBox WhoAreYou;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.ComboBox YourPlace;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.ComboBox TypeVagon;
         private System.Windows.Forms.TextBox SummOfPoezdka;
@@ -2107,5 +2083,6 @@
         private System.Windows.Forms.Button SaveTicket;
         private System.Windows.Forms.Button ExportToExcel;
         private System.Windows.Forms.Button FindTicket;
+        private System.Windows.Forms.ComboBox WhoAreYou;
     }
 }
